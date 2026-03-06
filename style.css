@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #dc3545; /* red */
+  padding: 1rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #fd7e14; /* orange */
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #fd7e14;
+  color: #fff;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #fff;
+  color: #dc3545;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #6c757d; /* brownish gray */
+  color: #fff;
+}
+
+.section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.dish {
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.dish:hover {
+  background: #dc3545;
+  color: #fff;
+}
+
+.about-img {
+  width: 80%;
+  max-width: 500px;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.7rem;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6c757d;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .hero {
+    padding: 1rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr; /* stack dishes */
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .dish {
+    font-size: 0.9rem;
+  }
+}
