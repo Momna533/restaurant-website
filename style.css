@@ -29,6 +29,26 @@ body {
   color: #fd7e14; /* orange */
 }
 
+.nav_link {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  transition:
+    color 0.3s,
+    border-bottom 0.3s;
+}
+
+.nav_link:hover {
+  color: #fd7e14;
+  border-bottom: 2px solid #fd7e14;
+}
+
+.nav_link.active {
+  font-weight: bold;
+  color: #fd7e14;
+  border-bottom: 2px solid #fd7e14;
+}
+
 .hero {
   text-align: center;
   padding: 2rem;
@@ -75,6 +95,12 @@ body {
   color: #fff;
 }
 
+.dish img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
 .about-img {
   width: 80%;
   max-width: 500px;
@@ -117,6 +143,44 @@ button:hover {
   margin: 2rem auto;
 }
 
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #dc3545;
+}
+
 .slide {
   display: none;
 }
@@ -128,6 +192,8 @@ button:hover {
 .slide img {
   width: 100%;
   border-radius: 10px;
+  height: 500px;
+  object-fit: cover;
 }
 /* Responsive Design */
 @media (max-width: 768px) {

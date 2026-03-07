@@ -21,14 +21,14 @@ A responsive, multi-page restaurant website with a homepage slider, menu, about,
 
 ## Deployment
 
-- Live Demo: [Demo Link Here]
-- GitHub Repo: [Repo Link Here]
+- Live Demo: [Demo Link Here](https://restaurant-website-iota-tan.vercel.app/)
+- GitHub Repo: [Repo Link Here](https://github.com/Momna533/restaurant-website)
 
 ## Screenshots
 
-- Homepage slider
-- Menu grid
-- Mobile view
+![Homepage Slider](images/restaurant-home.png)
+![Menu Page](images/restaurant-menu.png)
+![Mobile View](images/restaurant-mobile.png)
 
 ## Author
 
